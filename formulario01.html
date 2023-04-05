@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario php com html</title>
+    <style>
+        body{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            color: white;
+
+        }
+
+        main{
+           
+            position: absolute;
+            width: 250px;
+            height: 200px;
+            background-color: gray;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            padding-bottom: 20px;
+        }
+
+        form{
+            padding: 20px;
+            padding-bottom: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <form action="02idade.php" method="get">
+            Nome: <input type="text" name="nome" required><br>
+            Nascimento: <input type="number" name="ano" required>
+            <fieldset><legend>Sexo</legend>
+                <input type="radio" name="sexo" id="masc" value="homem" checked> 
+                <label for="masc">Masculino</label><br>
+                <input type="radio" name="sexo" id="fem" value="mulher" >
+                <label for="masc">feminino</label><br>
+        
+            </fieldset><br>
+            <input type="submit" value="Enviar">
+    </main>
+    </form>
+</body>
+</html>
