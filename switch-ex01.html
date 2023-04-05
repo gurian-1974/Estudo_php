@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario php com html</title>
+    <style>
+        body{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            color: white;
+
+        }
+
+        main{
+           
+            position: absolute;
+            width: 350px;
+            height: 200px;
+            background-color: gray;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            padding-bottom: 20px;
+        }
+
+        form{
+            padding: 20px;
+            padding-bottom: 40px;
+        }
+        #sub{
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <form action="switch02.php" method="get">
+            <fieldset><legend>Calcular Numero</legend>
+
+            <h3>Digite o dia da semana </h3>
+
+            <input type="radio" name="dia"id="dobro" value="1" checked>segunda
+            <input type="radio" name="dia" id="cubo" value="2">terça
+            <input type="radio" name="dia" id="raiz" value="3">quarta
+            <input type="radio" name="dia" id="raiz" value="4">quinta
+            <input type="radio" name="dia" id="raiz" value="5">sexta
+            <input type="radio" name="dia" id="raiz" value="6">sabado
+            <input type="radio" name="dia" id="raiz" value="7">domingo
+            <br>
+            
+           
+           
+            <input id="sub" type="submit" value="Enviar">
+            </fieldset><br>
+
+            
+           
+    </main>
+    </form>
+</body>
+</html>

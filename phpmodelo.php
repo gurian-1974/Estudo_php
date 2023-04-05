@@ -34,6 +34,10 @@
         
        
     </main>
+    <?php
+
+    echo "teste";
+    ?>
 </body>
 
 </html>

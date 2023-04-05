@@ -30,22 +30,31 @@
             padding: 20px;
             padding-bottom: 40px;
         }
+        #sub{
+            margin-top: 20px;
+        }
 
     </style>
 </head>
 <body>
     <main>
-        <form action="02idade.php" method="get">
-            Nome: <input type="text" name="nome" required><br>
-            Nascimento: <input type="number" name="ano" required>
-            <fieldset><legend>Sexo</legend>
-                <input type="radio" name="sexo" id="masc" value="homem" checked> 
-                <label for="masc">Masculino</label><br>
-                <input type="radio" name="sexo" id="fem" value="mulher" >
-                <label for="masc">feminino</label><br>
-        
+        <form action="switchphp.php" method="get">
+            <fieldset><legend>Calcular Numero</legend>
+
+            Numero: <input type="number" name="num" required><br>
+
+            <input type="radio" name="oper" id="dobro" value="1" checked>dobro
+            <input type="radio" name="oper" id="cubo" value="2">cubo
+            <input type="radio" name="oper" id="raiz" value="3">raiz
+            <br>
+            
+           
+           
+            <input id="sub" type="submit" value="Enviar">
             </fieldset><br>
-            <input type="submit" value="Enviar">
+
+            
+           
     </main>
     </form>
 </body>

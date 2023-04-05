@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 
 <html>
 
@@ -34,26 +34,29 @@
    
   
     </div>
-    <a href="./switchhtml.html">retorna</a>
+    <button><a href="./switch-ex01.html">retorna</a></button>
     <?php
 
-    $n = isset($_GET["num"]) ?$_GET["num"]:0;
-    $o = isset($_GET["oper"]) ?$_GET["oper"]:1;
+    $dia = isset($_GET["dia"]) ?$_GET["dia"]:1;
+  
     
-    switch ($o){
+    switch ($dia){
 
         case 1:
-            $r = $n * 2;
+        case 2:
+        case 3:    
+        case 4:
+        case 5:
+            echo "hoje  e dia de ir a escola";
             break;
 
-        case 2:
-             $r = $n * $n * $n;
-             break;
+        case 6:
+        case 7:
+             echo "hoje nao e dia de ir a escola";
 
-        case 3:
-            $r = sqrt($n) ;    
+       
     }
-        echo "resultado  $r";
+        
     ?>
 
 
